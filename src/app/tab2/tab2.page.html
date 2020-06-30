@@ -26,7 +26,7 @@
           <ion-button (click)="apagarTudo()" expand="block" color="warning">C</ion-button> 
         </ion-col>
         <ion-col>
-          <ion-button expand="block" color="warning">DEL</ion-button>  
+          <ion-button (click)="apagarUltimo()" expand="block" color="warning">DEL</ion-button>  
         </ion-col>
         <ion-col>
           <ion-button (click)="adicionarPonto()" expand="block" color="warning">.</ion-button> 
@@ -85,7 +85,7 @@
           <ion-button (click)="adicionarNumero('0')" expand="block" color="warning">0</ion-button>  
         </ion-col>
         <ion-col size="6">
-          <ion-button expand="block" color="warning">=</ion-button> 
+          <ion-button (click)="calcularResultado()" expand="block" color="warning">=</ion-button> 
         </ion-col>
       </ion-row>
     </ion-grid>
